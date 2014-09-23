@@ -1,11 +1,10 @@
 {
    "abstract" : "submit a benchmark report from Travis-CI to GitHub wiki",
    "author" : [
-      "Toby Inkster (TOBYINK) <tobyink@cpan.org>",
-      ""
+      "Toby Inkster (TOBYINK) <tobyink@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640",
+   "generated_by" : "Dist::Inkt::Profile::TOBYINK version 0.023, CPAN::Meta::Converter version 2.140640",
    "keywords" : [],
    "license" : [
       "perl_5"
@@ -36,6 +35,11 @@
             "Dist::Inkt" : "0.001"
          }
       },
+      "runtime" : {
+         "requires" : {
+            "perl" : "5.006"
+         }
+      },
       "test" : {
          "requires" : {
             "Test::More" : "0.47"
@@ -45,12 +49,11 @@
    "provides" : {
       "Benchmark::Report::GitHub" : {
          "file" : "lib/Benchmark/Report/GitHub.pm",
-         "version" : "0.001"
+         "version" : "0.002"
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "X_identifier" : "http://purl.org/NET/cpan-uri/dist/Benchmark-Report-GitHub/project",
       "bugtracker" : {
          "web" : "http://rt.cpan.org/Dist/Display.html?Queue=Benchmark-Report-GitHub"
       },
@@ -62,7 +65,8 @@
          "type" : "git",
          "url" : "git://github.com/tobyink/p5-benchmark-report-github.git",
          "web" : "https://github.com/tobyink/p5-benchmark-report-github"
-      }
+      },
+      "x_identifier" : "http://purl.org/NET/cpan-uri/dist/Benchmark-Report-GitHub/project"
    },
-   "version" : "0.001"
+   "version" : "0.002"
 }

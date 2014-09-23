@@ -5,9 +5,9 @@ my $EUMM = eval( $ExtUtils::MakeMaker::VERSION );
 
 my $meta = {
   "abstract"       => "submit a benchmark report from Travis-CI to GitHub wiki",
-  "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>", "unknown"],
+  "author"         => ["Toby Inkster (TOBYINK) <tobyink\@cpan.org>"],
   "dynamic_config" => 0,
-  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.016, CPAN::Meta::Converter version 2.140640",
+  "generated_by"   => "Dist::Inkt::Profile::TOBYINK version 0.023, CPAN::Meta::Converter version 2.140640",
   "keywords"       => [],
   "license"        => ["perl_5"],
   "meta-spec"      => {
@@ -18,11 +18,12 @@ my $meta = {
   "no_index"       => { directory => ["eg", "examples", "inc", "t", "xt"] },
   "prereqs"        => {
                         configure => { requires => { "ExtUtils::MakeMaker" => 6.17 } },
-                        develop => { recommends => { "Dist::Inkt" => 0.001 } },
-                        test => { requires => { "Test::More" => 0.47 } },
+                        develop   => { recommends => { "Dist::Inkt" => 0.001 } },
+                        runtime   => { requires => { perl => 5.006 } },
+                        test      => { requires => { "Test::More" => 0.47 } },
                       },
   "provides"       => {
-                        "Benchmark::Report::GitHub" => { file => "lib/Benchmark/Report/GitHub.pm", version => 0.001 },
+                        "Benchmark::Report::GitHub" => { file => "lib/Benchmark/Report/GitHub.pm", version => 0.002 },
                       },
   "release_status" => "stable",
   "resources"      => {
@@ -36,9 +37,9 @@ my $meta = {
                                           url  => "git://github.com/tobyink/p5-benchmark-report-github.git",
                                           web  => "https://github.com/tobyink/p5-benchmark-report-github",
                                         },
-                        X_identifier => "http://purl.org/NET/cpan-uri/dist/Benchmark-Report-GitHub/project",
+                        x_identifier => "http://purl.org/NET/cpan-uri/dist/Benchmark-Report-GitHub/project",
                       },
-  "version"        => 0.001,
+  "version"        => 0.002,
 };
 
 my %dynamic_config;
